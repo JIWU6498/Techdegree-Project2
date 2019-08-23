@@ -1,0 +1,189 @@
+/*  */
+/* ---- Navigation ---- */
+.main-header {
+   text-align: center;
+}
+
+.name {
+   font-size: 1.25em;
+   margin: 0;
+}
+
+.main-nav {
+   margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+   text-align: center;
+   display: inline-block;
+   padding: 10px 15px;
+}
+
+.main-nav {
+   font-size: 16px;
+}
+
+.main-nav a {
+   font-size: .95em;
+   color: black;
+   text-transform: uppercase;
+}
+
+.main-nav a:hover {
+   color: #093a58;
+}
+
+/*  */
+/* ---- Layout Containers ---- */
+.main-header {
+   padding-top: .5em;
+   padding-bottom: .5em;
+   margin: auto;
+}
+
+/* Banner */
+.banner {
+   text-align: center;
+   padding-top: 2em;
+   padding-bottom: 1em;
+   background-color: bisque;
+   margin: auto;
+}
+
+.introduction {
+   display: inline-block;
+   padding: 1em 3em 1em 3em;
+}
+
+.photo {
+   display: inline-block;
+   margin: 1em;
+}
+
+
+/* Portfolio */
+
+
+/*  */
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+   content: " ";
+   display: table;
+   clear: both;
+}
+
+
+/* Media Queries */
+@media(min-width:768px) {
+
+   /* header
+   .container {
+      width: 100%;
+      margin: auto;
+   } */
+
+   .name a,
+   .main-nav a {
+      display: block;
+   }
+
+   .main-nav li {
+      display: inline-block;
+      margin-left: 15px;
+   }
+
+   /* banner */
+   .banner {
+      width: 100%;
+      margin: 0 auto;
+      text-align: center;
+   }
+
+   .bannerRow {
+      display: flex;
+   }
+
+   .introduction {
+      width: 60%;
+   }
+
+   .photo {
+      width: 40%;
+      float: left;
+   }
+
+   /* Portfolio */
+
+   img {
+      width:100%;
+   }
+
+   .pcontainer {
+      width: 100%;
+   }
+
+   .portfolio1,
+   .portfolio2,
+   .portfolip3,
+   .portfolio4,
+   .portfolio5,
+   .portfolio6 {
+      display: inline-block;
+      width: 30%;
+   }
+
+
+   /*  */
+   /* ---- Float clearfix ---- */
+   .clearfix::after {
+      content: " ";
+      display: table;
+      clear: both;
+   }
+
+}
+
+
+
+@media(min-width:1024px) {
+
+   /* header*/
+   .header{
+      width:90%;
+      max-width:1150px;
+      margin: auto;
+   }
+   /* .container {
+      width: 100%;
+      margin: auto;
+   } */
+
+   .name {
+      float: left;
+   }
+
+   .main-nav {
+      float: right;
+   }
+
+   .main-nav li {
+      display: inline-block;
+      margin-left: 15px;
+   }
+
+   /* Portfolio */
+   .img {
+      width: 70%;
+      margin: 20px;
+   }
+
+   .pcontainer {
+      width: 90%;
+      max-width: 1150px;
+      margin: auto;
+   }
+
+
+}
