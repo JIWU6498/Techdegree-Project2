@@ -5,20 +5,22 @@ body{
 }
 
 .main-header {
+   width:100%;
+   box-sizing:border-box;
    text-align: center;
-   font-family: 'Noto Sans','Red Hat Text', sans-serif;
+   font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
+   color:#4a4a4a;
    margin:auto;
 }
 
 .name {
-   font-size: 2em;
+   font-size:2em;
    margin:auto;
 }
 
 .main-nav {
    margin-top:10px;
-   font-size:1em;
-   font-style: bold;
+   font-weight: bold;
    margin:auto;
 }
 
@@ -31,13 +33,15 @@ body{
 .main-nav a {
    text-align: center;
    display: inline-block;
-   padding: 15px 15px;
-   text-decoration-line: none;
+   padding: 8px 10px;
+   text-decoration:none;
+   font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
+   font-weight:bold;
+   color:#4a4a4a;
 }
 
 .main-nav a {
    font-size: 1.2em;
-   color: black;
    text-transform: uppercase;
 }
 
@@ -48,19 +52,22 @@ body{
 /*  */
 /* ---- Layout Containers ---- */
 .main-header {
-   padding-top: .5em;
-   padding-bottom: .5em;
+   padding:0.5em;
    margin: auto;
 }
 
 /* Banner */
 .banner {
-   font-family: 'Noto Sans','Red Hat Text', sans-serif;
+   font-family: 'Lato','Ubuntu','Red Hat Text', 'Noto Sans',sans-serif;
+   font-weight: normal;
+   color:#4a4a4a;
    font-style: normal;
-   font-size:1em;
+   font-size:1.2em;
    text-align: center;
-   padding-top: 2em;
    margin: auto;
+   width:100%;
+   box-sizing:border-box;
+   padding-top:2em;
 }
 
 .introduction {
@@ -70,6 +77,10 @@ body{
 
 .photo {
    display: inline-block;
+   max-width:70%;
+   width:auto;
+   height:auto;
+   margin:2.5em;
 }
 
 /* Portfolio */
@@ -77,12 +88,16 @@ body{
    width:100%;
    text-align:center;
    background-color: white;
+   font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
+   color:#4a4a4a;
 }
 
 .pTitle h2{
    padding:30px 20px;
    font-size:1.5em;
    margin:0;
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
 img{
@@ -103,7 +118,7 @@ img{
 
 .pDescription{
    display: inline-block;
-   margin:0.8em 1.5em 1em 1.5em;
+   /* margin:0.8em 1.5em 1em 1.5em; */
    font-size:1em;
 }
 
@@ -119,18 +134,33 @@ img{
 
 /* Contact */
 .contact{
+   width:100%;
+   box-sizing:border-box;
    text-align: center;
-   margin:4em 2.5em 4em 2.5em;   
+   padding:1em;
+   font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
+   color:#4a4a4a; 
+}
+
+.decoLine{
+   width:100%;
+   box-sizing:border-box;
+   border:0.5px solid #4a4a4a;
+   max-width: 1150px;
 }
 
 /* footer */
 .main-footer{
    width:100%;
+   box-sizing:border-box;
+   text-align:center;
    max-width:1150px;
    margin: auto;
    padding:1em 1em 3em 1em;  
-}
+   font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
+   color:#4a4a4a;
 
+}
 
 .footer-name {
    float:left;
@@ -138,22 +168,22 @@ img{
 
 .footer-nav{
    float:right;
-   padding-right:2em;
 }
 
 .footer-name a{
    text-decoration:none;
-   color:black;
    text-transform: uppercase;
+   color:#4a4a4a;
+   font-weight: bold;
 }
 
 .footer-nav li,
 .footer-nav a{
    display: inline-block;
-   padding-right:0.5em;
    text-decoration:none;
-   color:black;
    text-transform: uppercase;
+   color:#4a4a4a;
+   font-weight: bold;
 }
 
 .hideLink a{
@@ -220,15 +250,31 @@ img{
       width: 44%;
       box-sizing:border-box;
    }
+   /* Contact */
+   .contact{
+      padding:2em;
+   }
 
    /* Footer */
+   .decoLine{
+      width:95%;
+      box-sizing:border-box;
+      border:0.5px solid #4a4a4a;
+   }
    .hideLink a{
       display:inline-block;
    }
+
    .isHidetoTop a{
       display: none;
    }
 
+   .footer-nav{
+      padding-right:1em;
+   }
+   .footer-nav li{
+      padding-left:10px;
+   }
    /*  */
    /* ---- Float clearfix ---- */
    .clearfix::after {
@@ -246,6 +292,7 @@ img{
    /* header*/
    .main-header{
       width:100%;
+      box-sizing:border-box;
       max-width:1150px;
       margin: auto;
    }
@@ -256,6 +303,7 @@ img{
 
    .main-nav {
       float: right;
+      padding-right:1em;
    }
 
    .main-nav li {
@@ -265,6 +313,7 @@ img{
    
    .banner{
       width:100%;
+      box-sizing:border-box;
       max-width:1150px;
       margin: auto;
    }
@@ -272,6 +321,7 @@ img{
    /* Portfolio */
    .pcontainer {
       width: 100%;
+      box-sizing:border-box;
       max-width: 1150px;
       margin: auto;
    }
@@ -283,8 +333,9 @@ img{
    .portfolio5,
    .portfolio6 {
       display: inline-block;
-      width: 30%;
+      width: 29%;
+      box-sizing:border-box;
    }
 
-
+  
 }
