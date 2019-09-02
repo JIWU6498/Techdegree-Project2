@@ -7,34 +7,36 @@ body{
 .main-header {
    text-align: center;
    font-family: 'Noto Sans','Red Hat Text', sans-serif;
+   margin:auto;
 }
 
 .name {
-   font-size: 1.5em;
-   margin: 0;
+   font-size: 2em;
+   margin:auto;
 }
 
 .main-nav {
-   margin-top: 5px;
+   margin-top:10px;
    font-size:1em;
    font-style: bold;
-  
+   margin:auto;
+}
+
+.main-nav li{
+   background-color: white;
+   margin:5px 30px 5px 30px;
 }
 
 .name a,
 .main-nav a {
    text-align: center;
    display: inline-block;
-   padding: 10px 15px;
+   padding: 15px 15px;
    text-decoration-line: none;
 }
 
-.main-nav {
-   font-size: 16px;
-}
-
 .main-nav a {
-   font-size: .95em;
+   font-size: 1.2em;
    color: black;
    text-transform: uppercase;
 }
@@ -58,25 +60,29 @@ body{
    font-size:1em;
    text-align: center;
    padding-top: 2em;
-   padding-bottom: 1em;
    margin: auto;
 }
 
 .introduction {
    display: inline-block;
-   padding: 1em 3em 1em 3em;
+   padding: 2em 2.5em 2em 2.5em;
 }
 
 .photo {
    display: inline-block;
-   margin: 1em;
 }
 
 /* Portfolio */
 .pcontainer{
    width:100%;
    text-align:center;
-   background-color: WHITE;
+   background-color: white;
+}
+
+.pTitle h2{
+   padding:30px 20px;
+   font-size:1.5em;
+   margin:0;
 }
 
 img{
@@ -85,16 +91,22 @@ img{
    height:auto;
 }
 
+.textContainer{
+   margin:2em;
+}
+
 .pName{
    display:inline-block;
    font-size:1.2em;
    margin:0.8em 0.5em 0em 0.5em;
 }
+
 .pDescription{
    display: inline-block;
-   margin:0.8em 1em 0.8em 1em;
+   margin:0.8em 1.5em 1em 1.5em;
    font-size:1em;
 }
+
 .portfolio1,
 .portfolio2,
 .portfolio3,
@@ -103,24 +115,25 @@ img{
 .portfolio6 {
   margin:0 1em 0 1em;
 }
+
+
 /* Contact */
 .contact{
    text-align: center;
-   margin:0 auto;
+   margin:4em 2.5em 4em 2.5em;   
 }
+
 /* footer */
 .main-footer{
    width:100%;
    max-width:1150px;
    margin: auto;
-   padding:1em 1em 3em 1em;
-   
+   padding:1em 1em 3em 1em;  
 }
 
-.footer-nav a,
-.footer-nav li{
-   display: inline-block;
-   padding-right:1em;
+
+.footer-name {
+   float:left;
 }
 
 .footer-nav{
@@ -128,11 +141,24 @@ img{
    padding-right:2em;
 }
 
-.footer-name{
-   float:left;
+.footer-name a{
+   text-decoration:none;
+   color:black;
+   text-transform: uppercase;
 }
 
+.footer-nav li,
+.footer-nav a{
+   display: inline-block;
+   padding-right:0.5em;
+   text-decoration:none;
+   color:black;
+   text-transform: uppercase;
+}
 
+.hideLink a{
+  display:none;
+}
 /*  */
 /* ---- Float clearfix ---- */
 
