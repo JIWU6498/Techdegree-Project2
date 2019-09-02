@@ -16,12 +16,15 @@ body{
 .name {
    font-size:2em;
    margin:auto;
+   padding-left:1em;
+   padding-right:1em;
 }
 
 .main-nav {
    margin-top:10px;
    font-weight: bold;
    margin:auto;
+   padding-right:1em;
 }
 
 .main-nav li{
@@ -73,6 +76,7 @@ body{
 .introduction {
    display: inline-block;
    padding: 2em 2.5em 2em 2.5em;
+   text-align:center;
 }
 
 .photo {
@@ -80,7 +84,6 @@ body{
    max-width:70%;
    width:auto;
    height:auto;
-   margin:2.5em;
 }
 
 /* Portfolio */
@@ -141,7 +144,11 @@ img{
    font-family: 'Noto Sans','Ubuntu','Red Hat Text', 'Lato',sans-serif;
    color:#4a4a4a; 
 }
-
+.contactDescription{
+   width:90%;
+   margin:auto;
+   padding-bottom:10px;
+}
 .decoLine{
    width:100%;
    box-sizing:border-box;
@@ -233,12 +240,13 @@ img{
       box-sizing:border-box;
       width: 60%;
       float:left;
+      text-align:justify;
    }
 
    .photo {
-      max-width: 100%;
+      max-width:100%;
+      padding-top:2.5em;
    }
-   
    /* Portfolio */
    .portfolio1,
    .portfolio2,
@@ -255,6 +263,9 @@ img{
       padding:2em;
    }
 
+   .contactDescription{
+      width:70%;
+   }
    /* Footer */
    .decoLine{
       width:95%;
@@ -269,9 +280,9 @@ img{
       display: none;
    }
 
-   .footer-nav{
+   /* .footer-nav{
       padding-right:1em;
-   }
+   } */
    .footer-nav li{
       padding-left:10px;
    }
@@ -317,7 +328,10 @@ img{
       max-width:1150px;
       margin: auto;
    }
-
+   /* Banner */
+   .photo{
+      padding-top:1em;
+   }
    /* Portfolio */
    .pcontainer {
       width: 100%;
