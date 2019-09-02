@@ -181,31 +181,34 @@ img{
    .main-nav li {
       display: inline-block;
       margin-left: 15px;
+      background-color:#fafafa;
    }
 
    /* banner */
    .banner {
       width: 100%;
-      margin: 0 auto;
+      margin: 1em 3em 1em 3em;
       text-align: center;
+      padding: 1em;
+      margin: auto;
    }
-
-   .bannerRow {
-      display: flex;
+   .firstColumn{
+      width:40%;
+      box-sizing:border-box;
+      padding:10px 10px 10px 10px;
+      float:right;
    }
 
    .introduction {
+      box-sizing:border-box;
       width: 60%;
       float:left;
    }
 
-   /* .photo {
-      width: 40%;
-      float: right;
-   } */
-   .photoContainer{
-      float:right;
+   .photo {
+      max-width: 100%;
    }
+   
    /* Portfolio */
    .portfolio1,
    .portfolio2,
@@ -215,6 +218,15 @@ img{
    .portfolio6 {
       display: inline-block;
       width: 44%;
+      box-sizing:border-box;
+   }
+
+   /* Footer */
+   .hideLink a{
+      display:inline-block;
+   }
+   .isHidetoTop a{
+      display: none;
    }
 
    /*  */
@@ -250,11 +262,13 @@ img{
       display: inline-block;
       margin-left: 15px;
    }
-   .bannerRow{
+   
+   .banner{
       width:100%;
       max-width:1150px;
       margin: auto;
    }
+
    /* Portfolio */
    .pcontainer {
       width: 100%;
